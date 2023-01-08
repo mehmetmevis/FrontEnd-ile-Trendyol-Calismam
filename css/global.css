@@ -1,6 +1,10 @@
 * {
-  padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
+}
+#head {
+  width: auto;
+  background-color: #fff;
 }
 #head .upNavbar {
   display: flex;
@@ -294,14 +298,14 @@
 }
 #altFooter .baslik {
   margin: 0 auto;
-  width: 1200px;
+  width: auto;
   margin-top: 10px;
   font-weight: bold;
   font-size: 20px;
 }
 #altFooter .yazi {
   margin: 0 auto;
-  width: 1200px;
+  width: auto;
   font-size: 13px;
   letter-spacing: 0.5px;
 }
