@@ -1,5 +1,4 @@
-@media (max-width: 820px) {
-  * {
+* {
     background-color: #f9f9f9;
     margin: 0;
   }
@@ -97,4 +96,3 @@
   #altFooter .bestMarka div {
     margin-top: 50px;
   }
-}
