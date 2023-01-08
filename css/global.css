@@ -21,6 +21,14 @@
 #head .upNavbar ul a:hover {
   opacity: 1;
 }
+#kontrol {
+  display: none;
+}
+.kontrol {
+  display: none;
+  line-height: 40px;
+  float: left;
+}
 #navbar {
   margin-top: -18px;
   display: flex;
@@ -55,6 +63,35 @@
   padding-left: 15px;
 }
 #navbar .search-box .btn-search {
+  width: 18px;
+  height: 18px;
+  color: #f27a1a;
+  padding-right: 15px;
+}
+.search-box-phone {
+  background-color: #f3f3f3;
+  width: 598px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  display: none;
+}
+.search-box-phone:active {
+  background: white;
+  border: 1px solid #f27a1a;
+}
+.search-box-phone .txtSearch {
+  float: left;
+  width: 598px;
+  height: 42px;
+  background: none;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+}
+.search-box-phone .btn-search {
   width: 18px;
   height: 18px;
   color: #f27a1a;
