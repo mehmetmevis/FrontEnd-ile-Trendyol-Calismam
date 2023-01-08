@@ -1,10 +1,10 @@
 * {
   font-family: sans-serif;
-  box-sizing: border-box;
 }
 #head {
   width: auto;
   background-color: #fff;
+  box-sizing: border-box;
 }
 #head .upNavbar {
   display: flex;
@@ -232,6 +232,21 @@
   height: 136px;
   margin-top: 18px;
 }
+#container .middle-container3 {
+  align-items: center;
+  margin: 10px;
+  width: 188px;
+  height: 260px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  border: solid 1px #e6e6e6;
+  background-color: #fff;
+}
+#container .middle-container3 a img {
+  width: 90x;
+  height: 136px;
+  margin-top: 18px;
+}
 #container .middleOn span {
   display: flex;
   justify-content: space-between;
@@ -288,6 +303,42 @@
 #container .middle-container1 .middleIco:hover {
   color: #f27a1a;
 }
+#container .middleAlt .middle-container3 a {
+  text-decoration: none;
+}
+#container .middleAlt .middle-container3 a span {
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: black;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  margin: 20px 10px 10px 10px;
+}
+#container .middle-container3 .kargo {
+  position: absolute;
+  margin-top: -249px;
+  margin-left: -84px;
+  color: white;
+  background: rgb(66, 65, 65);
+  border: 1px solid rgb(66, 65, 65);
+  font-size: 10px;
+  padding: 3px 8px 3px 8px;
+  border-radius: 5px;
+}
+#container .middle-container3 .middleIco {
+  position: absolute;
+  margin-top: -250px;
+  margin-left: 55px;
+  border: 1px solid #e3d9d0;
+  background-color: rgb(255, 248, 248);
+  color: black;
+  padding: 5px;
+  border-radius: 100%;
+}
+#container .middle-container3 .middleIco:hover {
+  color: #f27a1a;
+}
 .ikinciCizgi {
   margin: 0 auto;
   width: 1200px;
@@ -313,41 +364,51 @@
   margin-top: 30px;
   opacity: 0.5;
 }
-#altFooter .bestMarka {
-  margin: 0 auto;
-  width: 1200px;
-  display: flex;
-  justify-content: left;
-}
 #altFooter .bestMarka .bestCategori {
-  margin: 0 auto;
-  width: 1200px;
   display: flex;
-  margin-left: 60px;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #d4d4d4;
+  padding: 30px 0;
+  color: #333;
 }
-#altFooter .bestTxt {
+#altFooter .bestMarka .bestCategori .bestTxt {
+  width: 1080px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin: 0px auto;
-  width: 1070px;
-  font-size: 21px;
 }
-#altFooter .bestTxt span {
-  margin-right: 318px;
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi {
+  width: 45%;
 }
-#altFooter .bestMarka .bestCategori ul li a {
-  margin-right: 40px;
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi h3{
+  font-size: 22px;
+  color: #333;
+  margin: 10px 0 20px;
+}
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestLast hr{
+  display: none;
+}
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl{
+  margin: 10px auto;
   display: flex;
-  color: black;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0px;
+}
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li{
+  flex: 0 26%;
+  margin: 3px 0px 8px;
+  overflow: hidden;
+}
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li a{
   text-decoration: none;
-  padding: 5px;
   font-size: 12px;
+  color: #1b1b1b;
 }
-.bestCategori ul li {
-  list-style-type: none;
-  padding-left: 0;
-}
-#altFooter .bestMarka .bestCategori ul li a:hover {
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li a:hover{
   text-decoration: underline;
 }
 #altFooter .sonFooter {
@@ -436,7 +497,7 @@
   font-size: 13px;
   margin-left: 10px;
 }
-#altFooter .sonFooter .son1 .trendqr{
+#altFooter .sonFooter .son1 .trendqr {
   display: flex;
 }
 #altFooter .sonFooter .son1 .qr a img {
@@ -455,21 +516,21 @@
   margin: 0 auto;
   width: 1200px;
 }
-#altFooter .sonFooter .busefersonFooter{
-padding: 10px;
-background-color: #2d2d2d;
-color: white;
-font-size: 11px;
-font-weight: bold;
+#altFooter .sonFooter .busefersonFooter {
+  padding: 10px;
+  background-color: #2d2d2d;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
 }
-#altFooter .sonFooter .busefersonFooter ul{
+#altFooter .sonFooter .busefersonFooter ul {
   margin: 0 auto;
   width: 1100px;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
   list-style-type: none;
-  }
+}
 #altFooter .sonFooter .busefersonFooter ul li a {
   color: white;
   text-decoration: none;
