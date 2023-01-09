@@ -24,7 +24,8 @@
   font-size: 9px;
 }
 #navbar .logo img {
-  margin-left: -240px;
+  margin-left: -260px;
+  margin-top: 10px;
   width: auto;
   height: auto;
 }
@@ -51,15 +52,16 @@
 }
 .search-box-phone {
   margin-top: 10px;
+  margin-left: 12px;
   width: 750px;
   display: flex;
-  padding-left: 40px;
+  padding-left: 30px;
   border: 0.5px solid #999;
   background-color: white;
 }
 .search-box-phone .btn-search {
   text-align: left;
-  margin-left: -630px;
+  margin-left: -635px;
   color: #999;
 }
 ::placeholder {
@@ -108,16 +110,14 @@
   box-sizing: border-box;
   display: block;
   position: relative;
-  border-radius: 6px 6px 0px 0px;
 }
 #altFooter {
   margin: 0 auto;
   width: auto;
 }
-/* #altFooter .bestMarka div {
-  margin-left: 10px;
-  width: 840px;
-} */
+#altFooter .footerYazi {
+  width: 790px;
+}
 #altFooter .sonFooter {
   display: none;
 }
