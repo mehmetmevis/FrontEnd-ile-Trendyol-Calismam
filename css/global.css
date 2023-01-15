@@ -25,13 +25,14 @@
 #head .upNavbar ul a:hover {
   opacity: 1;
 }
-#kontrol {
+#navbar .hiddenBars {
   display: none;
 }
-.kontrol {
+#navbar .bars {
   display: none;
-  line-height: 40px;
-  float: left;
+}
+#navbar .bars .open-bars {
+  display: none;
 }
 #navbar {
   margin-top: -18px;
@@ -232,6 +233,21 @@
   height: 136px;
   margin-top: 18px;
 }
+#container .middle-container2 {
+  align-items: center;
+  margin: 10px;
+  width: 188px;
+  height: 260px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  border: solid 1px #e6e6e6;
+  background-color: #fff;
+}
+#container .middle-container2 a img {
+  width: 90x;
+  height: 136px;
+  margin-top: 18px;
+}
 #container .middle-container3 {
   align-items: center;
   margin: 10px;
@@ -301,6 +317,42 @@
   border-radius: 100%;
 }
 #container .middle-container1 .middleIco:hover {
+  color: #f27a1a;
+}
+#container .middleAlt .middle-container2 a {
+  text-decoration: none;
+}
+#container .middleAlt .middle-container2 a span {
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: black;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  margin: 20px 10px 10px 10px;
+}
+#container .middle-container2 .kargo {
+  position: absolute;
+  margin-top: -249px;
+  margin-left: -84px;
+  color: white;
+  background: rgb(66, 65, 65);
+  border: 1px solid rgb(66, 65, 65);
+  font-size: 10px;
+  padding: 3px 8px 3px 8px;
+  border-radius: 5px;
+}
+#container .middle-container2 .middleIco {
+  position: absolute;
+  margin-top: -250px;
+  margin-left: 55px;
+  border: 1px solid #e3d9d0;
+  background-color: rgb(255, 248, 248);
+  color: black;
+  padding: 5px;
+  border-radius: 100%;
+}
+#container .middle-container2 .middleIco:hover {
   color: #f27a1a;
 }
 #container .middleAlt .middle-container3 a {
@@ -373,7 +425,6 @@
   justify-content: center;
   width: 100%;
   background-color: #fff;
-  border-top: 1px solid #d4d4d4;
   padding: 30px 0;
   color: #333;
 }
@@ -386,15 +437,15 @@
 #altFooter .bestMarka .bestCategori .bestTxt .bestYazi {
   width: 45%;
 }
-#altFooter .bestMarka .bestCategori .bestTxt .bestYazi h3{
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi h3 {
   font-size: 22px;
   color: #333;
   margin: 10px 0 20px;
 }
-#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestLast hr{
-  display: none;
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestLast {
+  display: block;
 }
-#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl{
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl {
   margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
@@ -402,17 +453,17 @@
   list-style: none;
   padding: 0px;
 }
-#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li{
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li {
   flex: 0 26%;
   margin: 3px 0px 8px;
   overflow: hidden;
 }
-#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li a{
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li a {
   text-decoration: none;
   font-size: 12px;
   color: #1b1b1b;
 }
-#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li a:hover{
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li a:hover {
   text-decoration: underline;
 }
 #altFooter .sonFooter {

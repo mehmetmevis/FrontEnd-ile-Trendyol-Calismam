@@ -9,7 +9,8 @@
     </title>
     <link rel="shortcut icon" type="image/ico" href="/images/icon.ico" />
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" media="(max-width:820px)" href="css/phone.css" />
+    <link rel="stylesheet" media="(max-width:820px)" href="css/tablet.css" />
+    <link rel="stylesheet" media="(max-width:500px)" href="css/phone.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -28,14 +29,47 @@
         </ul>
       </div>
       <nav id="navbar">
-        <div class="bars">
-          <input type="checkbox" id="kontrol" />
-          <label for="kontrol" class="kontrol">
-            <i class="fa-solid fa-bars">
-              <span>menü</span>
-            </i>
-          </label>
-        </div>
+        <div class="hiddenBars">
+          <div class="menuBars">
+            <input type="checkbox" id="checkMenu">
+            <label for="checkMenu" class="kontrol">
+              <i class="fa-solid fa-bars"></i>
+              <span class="name">menü</span>
+            </label>
+              <div class="categori-bars">
+                  <div class="shockBars">
+                      <a class="hiddenFirst" href="#"><img src="images/logo.png" alt="">
+                        <input type="checkbox" id="checkMenu">
+                       <label for="checkMenu" class="kontrol">
+                        <i class="fa-solid fa-xmark"></i>
+                       </label>
+                      </a>
+                      <div class="shockText"><a href="#"><img src="images/shock.png" alt=""><span>Flaş İndirimler<p>Hemen al,fırsatı kaçırma!</p></span><i class="fa-solid fa-angle-right"></i></a></div>
+                  </div>
+                  <ul class="categori-bars-1">
+                      <li><a href="#"><p><i><img src="images/woman-clothes.png" alt=""></i>KADIN<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/man.png" alt=""></i>ERKEK<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/dress.png" alt=""></i>ANNE & ÇOCUK<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/jacket.png" alt=""></i>SPOR & OUTDOOR<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/high-heel.png" alt=""></i>AYAKKABI & ÇANTA<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/watch.png" alt=""></i>SAAT & AKSESUAR<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/products.png" alt=""></i>KOZMETİK & KİŞİSEL BAKIM<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/furnitures.png" alt=""></i>EV & MOBİLYA<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/shopping-cart.png" alt=""></i>SÜPERMARKET<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/smartphone-call.png" alt=""></i>ELEKTRONİK<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/couch.png" alt=""></i>MOBİLYA<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li><a href="#"><p><i><img src="images/driller.png" alt=""></i>OTO & YAPI & BAHÇE<i class="fa-solid fa-angle-right"></i></p></a></li>
+                      <li class="lastLi"><a href="#"><p><i><img src="images/open-book.png" alt=""></i>KİTAP & KIRTASİYE & HOBİ<i class="fa-solid fa-angle-right"></i></p></a></li>
+                  </ul>
+
+                  <ul class="categori-bars-1">
+                      <li class="lastLi2"><a href="#"><span><i class="fa-solid fa-user"></i>Üye Ol / Giriş Yap</span></a></li>
+                      <li class="lastLi2"><a href="#"><span><i class="fa-solid fa-circle-question"></i>Yardım</span></a></li>
+                      <li class="lastLi2"><a href="#"><span><i class="fa-solid fa-earth-americas"></i>Ülke Değiştir</span></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
         <div class="logo">
           <a href="#">
             <img src="images/logo.png" alt="Trendyol" />
@@ -73,8 +107,8 @@
           <a href="#">ERKEK</a>
           <a href="#">ANNE & ÇOCUK</a>
           <a href="#">EV & MOBİLYA</a>
-          <a href="#">SÜPERMARKET</a>
-          <a href="#">KOZMETİK</a>
+          <a href="#" class="categori-tablet">SÜPERMARKET</a>
+          <a href="#" class="categori-tablet">KOZMETİK</a>
           <a href="#" class="categori-phone">AYAKKABI & ÇANTA</a>
           <a href="#" class="categori-phone">SAAT & AKSESUAR</a>
           <a href="#" class="categori-phone">ELEKTRONİK</a>
@@ -86,15 +120,13 @@
     <section id="circle">
       <a href="#"><img src="/images/c1.png" alt="Sana Özel" />Sana Özel</a>
       <a href="#"><img src="/images/c2.png" alt="Sen De Al!" />Sen De Al!</a>
-      <a href="#"
-        ><img src="/images/c3.png" alt="Çekiliş Kuponu" />Kurumsal</a
-      >
+      <a href="#"><img src="/images/c3.png" alt="Çekiliş Kuponu" />Kurumsal</a>
       <a href="#"><img src="/images/c4.png" alt="adidas" />adidas</a>
       <a href="#"
         ><img src="/images/c5.png" alt="TrendyolMilla" />TrendyolMilla</a
       >
-      <a href="#"><img src="/images/c6.png" alt="Pull & Bear" />Pull&Bear</a>
-      <a href="#"><img src="/images/c7.png" alt="İpekyol" />İpekyol</a>
+      <a href="#" class="circle-tablet"><img src="/images/c6.png" alt="Pull & Bear" />Pull&Bear</a>
+      <a href="#" class="circle-tablet"><img src="/images/c7.png" alt="İpekyol" />İpekyol</a>
       <a href="#" class="circle-phone"
         ><img src="/images/c8.png" alt="ike" />Nike</a
       >
@@ -168,7 +200,7 @@
           <a href="#" class="middleIco"><i class="fa-regular fa-heart"></i></a>
           <span class="kargo">KARGO<br />BEDAVA</span>
         </div>
-        <div class="middle-container1">
+        <div class="middle-container2">
           <a href="#">
             <img src="/images/cont3.webp" alt="snow basic" /> <br />
             <span>LYNX TACTİCALŞardonlu Eşofman Altı</span>
@@ -179,7 +211,7 @@
           <a href="#" class="middleIco"><i class="fa-regular fa-heart"></i></a>
           <span class="kargo">KARGO<br />BEDAVA</span>
         </div>
-        <div class="middle-container1">
+        <div class="middle-container2">
           <a href="#">
             <img src="/images/cont4.webp" alt="snow basic" /> <br />
             <span>LYNX TACTİCALŞardonlu Eşofman Altı</span>
@@ -206,7 +238,8 @@
             <img src="/images/cont6.webp" alt="snow basic" /> <br />
             <span>LYNX TACTİCALŞardonlu Eşofman Altı</span>
             <span style="color: #f27a1a; font-weight: bold; font-size: 16px"
-              >197,89 TL</span>
+              >197,89 TL</span
+            >
           </a>
           <a href="#" class="middleIco"><i class="fa-regular fa-heart"></i></a>
           <span class="kargo">KARGO<br />BEDAVA</span>
@@ -309,7 +342,7 @@
           <a href="#" class="middleIco"><i class="fa-regular fa-heart"></i></a>
           <span class="kargo">KARGO<br />BEDAVA</span>
         </div>
-        <div class="middle-container1">
+        <div class="middle-container2">
           <a href="#">
             <img src="/images/cont3.webp" alt="snow basic" /> <br />
             <span>LYNX TACTİCALŞardonlu Eşofman Altı</span>
@@ -320,7 +353,7 @@
           <a href="#" class="middleIco"><i class="fa-regular fa-heart"></i></a>
           <span class="kargo">KARGO<br />BEDAVA</span>
         </div>
-        <div class="middle-container1">
+        <div class="middle-container2">
           <a href="#">
             <img src="/images/cont4.webp" alt="snow basic" /> <br />
             <span>LYNX TACTİCALŞardonlu Eşofman Altı</span>
@@ -383,7 +416,7 @@
           <a href="#" class="middleIco"><i class="fa-regular fa-heart"></i></a>
           <span class="kargo">KARGO<br />BEDAVA</span>
         </div>
-        <div class="middle-container1">
+        <div class="middle-container2">
           <a href="#">
             <img src="/images/cont3.webp" alt="snow basic" /> <br />
             <span>LYNX TACTİCALŞardonlu Eşofman Altı</span>
@@ -394,7 +427,7 @@
           <a href="#" class="middleIco"><i class="fa-regular fa-heart"></i></a>
           <span class="kargo">KARGO<br />BEDAVA</span>
         </div>
-        <div class="middle-container1">
+        <div class="middle-container2">
           <a href="#">
             <img src="/images/cont4.webp" alt="snow basic" /> <br />
             <span>LYNX TACTİCALŞardonlu Eşofman Altı</span>
@@ -590,9 +623,7 @@
           <div class="bestTxt">
             <div class="bestYazi">
               <div class="bestLast">
-                <hr />
                 <h3>Popüler Marka ve Mağazalar</h3>
-                <hr />
               </div>
               <ul class="bestUl">
                 <li><a href="#">Penti</a></li>
@@ -644,9 +675,7 @@
             </div>
             <div class="bestYazi">
               <div class="bestLast">
-                <hr>
                 <h3>Popüler Sayfalar</h3>
-                <hr>
                 <ul class="bestUl">
                   <li><a href="#">Bluetooth Kulaklık</a></li>
                   <li><a href="#">Alışveriş Kredisi</a></li>

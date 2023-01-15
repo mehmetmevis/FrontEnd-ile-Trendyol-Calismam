@@ -15,19 +15,193 @@
   justify-content: space-between;
   align-items: center;
 }
-#navbar .bars .kontrol i {
-  display: block;
-  font-size: 25px;
+#navbar .logo {
+  display: none;
 }
-#navbar .bars .kontrol i span {
+#navbar .hiddenBars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#navbar .hiddenBars .menuBars #checkMenu {
+  display: none;
+  z-index: 1000;
+}
+#navbar .hiddenBars .menuBars #checkMenu:checked ~ .categori-bars {
+  left: 0%;
+}
+#navbar .hiddenBars .menuBars .kontrol i {
   display: block;
-  font-size: 9px;
+  font-size: 30px;
+  margin-top: 15px;
+}
+#navbar .hiddenBars .menuBars .kontrol .name {
+  font-size: 10px;
+  font-weight: bold;
+}
+#navbar .hiddenBars .menuBars .categori-bars {
+  width: 27%;
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: -55%;
+  transition: 0.5s ease;
+}
+#navbar .hiddenBars .menuBars .categori-bars div {
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+  align-items: center;
+  margin: 0;
+}
+#navbar .hiddenBars .menuBars .categori-bars div .hiddenFirst {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars div .hiddenFirst img {
+  margin: 15px 5px 12px 15px;
+  margin-left: 0px;
+  height: 35px;
+}
+#navbar .hiddenBars .menuBars .categori-bars div .hiddenFirst i {
+  font-size: 25px;
+  color: #333;
+  margin: 18px 20px 0 0;
+}
+#navbar
+  .hiddenBars
+  .menuBars
+  .categori-bars
+  .shockBars
+  .hiddenFirst
+  #checkMenu {
+  display: none;
+}
+#navbar
+  .hiddenBars
+  .menuBars
+  .categori-bars
+  .shockBars
+  .hiddenFirst
+  #checkMenu:checked
+  ~ .categori-bars {
+  display: none;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .shockBars .shockText {
+  padding: auto;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .shockText a {
+  padding: 15px 7px 15px 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(270deg, #ff488b, #ff6d13);
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .shockText a img {
+  width: 32px;
+  margin: 0;
+  background: #ff6823;
+  margin-left: 8px;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .shockText a span {
+  background: #ff5c49;
+  font-size: 15px;
+  display: block;
+  margin: 0 auto 0 5px;
+}
+#navbar .hiddenBars .menuBars .categori-bars .shockText a p {
+  background: #ff603f;
+  font-size: 12px;
+}
+#navbar .hiddenBars .menuBars .categori-bars .shockText a .fa-solid {
+  font-size: 12px;
+  padding: 3px;
+  width: 12px;
+  text-align: center;
+  color: #333;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;
+  border-radius: 100%;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 {
+  list-style: none;
+  background: #fff;
+  padding: 0px 10px;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 li {
+  border-bottom: 1px solid hsla(0, 0%, 60%, 0.2);
+  align-items: center;
+  padding: 15px 0px 15px 5px;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 a i {
+  font-size: 15px;
+  align-items: center;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 .lastLi {
+  border-bottom: 10px solid #f1f1f1;
+}
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 .lastLi2 a i {
+  margin-right: 19px;
+  color: #888;
+}
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 li a span {
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar .hiddenBars.menuBars .categori-bars .categori-bars-1 li a span i {
+  margin: 12px 17px 12px 0px;
+  font-size: 16px;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 li a {
+  text-decoration: none;
+  color: #333;
+  align-items: center;
+  display: block;
+  padding: 2px;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 li a p {
+  display: flex;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 li a p i {
+  margin-left: 0px;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 li a p .fa-solid {
+  margin-left: auto;
+}
+
+#navbar .hiddenBars .menuBars .categori-bars .categori-bars-1 li a p i img {
+  margin-right: 10px;
 }
 #navbar .logo img {
-  margin-left: -260px;
-  margin-top: 10px;
-  width: auto;
-  height: auto;
+  margin-left: 0;
+  margin: 0;
+  margin-top: 0;
 }
 #navbar .txtnavbar a span {
   display: none;
@@ -53,10 +227,10 @@
 .search-box-phone {
   margin-top: 10px;
   margin-left: 12px;
-  width: 750px;
+  width: 88%;
   display: flex;
   padding-left: 30px;
-  border: 0.5px solid #999;
+  border: 0.1px solid #999;
   background-color: white;
 }
 .search-box-phone .btn-search {
@@ -74,15 +248,24 @@
   padding: 0;
 }
 #categori ul a {
-  margin: 0 14px;
-  padding: 12px;
+  padding: 0;
+  margin: 0 10px;
 }
 #categori ul .categori-phone {
   display: none;
 }
+#categori ul .categori-tablet {
+  display: none;
+}
+#circle {
+  margin-left: 0;
+}
 #circle a {
-  padding: 5px 23px;
+  padding: 5px 5px;
   line-height: 20px;
+}
+#circle .circle-tablet {
+  display: none;
 }
 #circle .circle-phone {
   display: none;
@@ -116,7 +299,7 @@
   width: auto;
 }
 #altFooter .footerYazi {
-  width: 790px;
+  width: 470px;
 }
 #altFooter .sonFooter {
   display: none;
@@ -126,7 +309,7 @@
   margin-left: 10px;
 }
 #altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl {
-  width: 800px;
+  width: 480px;
 }
 #altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li {
   flex: 0 30%;
@@ -143,15 +326,34 @@
 }
 #altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestLast hr {
   display: block;
-  width: 800px;
+  width: 480px;
   color: #555;
 }
 #container {
-    width: 810px;
-}
-#container .middle-container3 {
-    display: none;
+  width: 100%;
 }
 #container .middleAlt {
-    width: 800px;
+  width: 100%;
+}
+#altFooter .footerYazi {
+  width: 95%;
+}
+#altFooter .baslik {
+  font-size: 15px;
+}
+#altFooter .yazi {
+  font-size: 10px;
+}
+#container .middleAlt .middle-container1 {
+  margin-left: 0;
+}
+#container .middleAlt .middle-container2 {
+  display: none;
+}
+#container .middleAlt .middle-container3 {
+  display: none;
+}
+#altFooter .bestMarka .bestCategori {
+  width: 60%;
+  margin-left: 120px;
 }
