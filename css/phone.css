@@ -10,13 +10,17 @@
 }
 #navbar {
   margin: 0px 7px 0px 15px;
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #navbar .logo {
-  display: none;
+  display: block;
+  margin: 0;
+  float: left;
+  margin-right: 125px;
+  margin-top: 10px;
 }
 #navbar .hiddenBars {
   display: flex;
@@ -40,14 +44,14 @@
   font-weight: bold;
 }
 #navbar .hiddenBars .menuBars .categori-bars {
-  width: 27%;
+  width: 78%;
   height: 100%;
   margin: 0;
   background-color: #fff;
   z-index: 1000;
   position: fixed;
   top: 0;
-  left: -55%;
+  left: -100%;
   transition: 0.5s ease;
 }
 #navbar .hiddenBars .menuBars .categori-bars div {
@@ -66,7 +70,7 @@
 
 #navbar .hiddenBars .menuBars .categori-bars div .hiddenFirst img {
   margin: 15px 5px 12px 15px;
-  margin-left: 0px;
+  margin-left: 15px;
   height: 35px;
 }
 #navbar .hiddenBars .menuBars .categori-bars div .hiddenFirst i {
@@ -203,6 +207,9 @@
   margin: 0;
   margin-top: 0;
 }
+#navbar .txtnavbar a{
+  padding: 0 5px;
+}
 #navbar .txtnavbar a span {
   display: none;
 }
@@ -222,21 +229,24 @@
   display: block;
 }
 #navbar .search-box {
+  width: auto;
   display: none;
 }
 .search-box-phone {
   margin-top: 10px;
-  margin-left: 12px;
-  width: 88%;
+  width: auto;
   display: flex;
-  padding-left: 30px;
   border: 0.1px solid #999;
   background-color: white;
 }
+.search-box-phone .txtSearch{
+  width: 290px;
+}
 .search-box-phone .btn-search {
   text-align: left;
-  margin-left: -635px;
   color: #999;
+  width: auto;
+  margin-left: -325px;
 }
 ::placeholder {
   color: #999;
@@ -250,6 +260,7 @@
 #categori ul a {
   padding: 0;
   margin: 0 10px;
+  font-size: 13px;
 }
 #categori ul .categori-phone {
   display: none;
@@ -258,11 +269,17 @@
   display: none;
 }
 #circle {
+  width: auto;
   margin-left: 0;
 }
 #circle a {
-  padding: 5px 5px;
+  padding: 5px 8px;
   line-height: 20px;
+  font-size: 10px;
+}
+#circle a img {
+  width: 58px;
+  height: 58px;
 }
 #circle .circle-tablet {
   display: none;
@@ -299,19 +316,31 @@
   width: auto;
 }
 #altFooter .footerYazi {
-  width: 470px;
+  width: auto;
+  padding: 0 10px;
 }
 #altFooter .sonFooter {
   display: none;
+  width: auto;
+}
+#altFooter .bestMarka .bestCategori {
+  margin: 0;
 }
 #altFooter .bestMarka .bestCategori .bestTxt {
   display: block;
-  margin-left: 10px;
+  margin: 0;
+  width: auto;
+}
+#altFooter .bestMarka .bestCategori .bestTxt .bestYazi {
+  width: 100%;
+  margin: 0;
 }
 #altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl {
-  width: 480px;
+  width: 100%;
+  margin: 0 auto;
 }
 #altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestUl li {
+  width: 100%;
   flex: 0 30%;
   margin: 3px 0px 8px;
   overflow: hidden;
@@ -326,17 +355,18 @@
 }
 #altFooter .bestMarka .bestCategori .bestTxt .bestYazi .bestLast hr {
   display: block;
-  width: 480px;
+  width: auto;
+  margin: 0;
   color: #555;
 }
 #container {
-  width: 100%;
+  width: auto;
 }
 #container .middleAlt {
-  width: 100%;
+  width: auto;
 }
 #altFooter .footerYazi {
-  width: 95%;
+  width: auto;
 }
 #altFooter .baslik {
   font-size: 15px;
@@ -353,7 +383,25 @@
 #container .middleAlt .middle-container3 {
   display: none;
 }
-#altFooter .bestMarka .bestCategori {
-  width: 60%;
-  margin-left: 120px;
+#altFooter .sonFooter .son {
+  width: auto;
+}
+#container {
+  width: auto;
+  margin: 0;
+}
+#container .middle-container3 {
+  display: none;
+}
+#container .middleAlt {
+  margin: 0;
+  width: auto;
+}
+.ikinciCizgi {
+  margin: 0;
+  width: auto;
+}
+#altFooter .sonFooter .son {
+  margin: 0;
+  width: auto;
 }

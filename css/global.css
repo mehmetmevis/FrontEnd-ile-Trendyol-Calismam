@@ -10,9 +10,10 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  width: 1200px;
+  width: 820px;
   margin: 0 auto;
   margin-top: -20px;
+  margin-left: 720px;
 }
 #head .upNavbar ul a {
   justify-content: right;
